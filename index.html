@@ -1,0 +1,40 @@
+<!DOCTYPE html">
+
+<html>
+<head>
+  <meta content="initial-scale = 1, maximum-scale = 1, minimum-scale = 1, width = device-width" name="viewport">
+
+  <link rel="stylesheet" href="style.css">
+</html>
+  <title>Pointfree.js &middot; Static Haskell pointfree converter</title>
+</head>
+
+<body>
+  <h1>Pointfree.js</h1>
+
+  <dl>
+    <dt>Input</dt>
+
+    <dd><input autocapitalize="none" autocomplete="off" autocorrect="off" id="input" spellcheck="off" placeholder="sum xs = foldr (+) 0 xs" autofocus=""></dd>
+
+    <dt>Pointfree</dt>
+
+    <dd>
+      <div id="pointfree"></div>
+    </dd>
+
+    <dt>Pointful</dt>
+
+    <dd>
+      <div id="pointful"></div>
+    </dd>
+  </dl>
+
+  <p>Pointfree.js converts Haskell expressions between the pointfree and
+  pointful styles. It is a web front end to the <a href="http://hackage.haskell.org/package/pointfree">pointfree</a> and
+  <a href="http://hackage.haskell.org/package/pointful">pointful</a> libraries.</p>
+
+  <p>The design and inspiration are shamelessly borrowed from <a href="https://blunt.herokuapp.com">Blunt</a> by <a href="https://github.com/tfausak">@tfausak</a>.</p>
+</body>
+<script language="javascript" src="all.js" defer></script>
+</html>
