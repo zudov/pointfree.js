@@ -20,21 +20,33 @@
     <dt>Pointfree</dt>
 
     <dd>
-      <div id="pointfree"></div>
+      <div id="pointfree">Loading...</div>
     </dd>
 
     <dt>Pointful</dt>
 
     <dd>
-      <div id="pointful"></div>
+      <div id="pointful">Loading...</div>
     </dd>
   </dl>
 
-  <p>Pointfree.js converts Haskell expressions between the pointfree and
-  pointful styles. It is a web front end to the <a href="http://hackage.haskell.org/package/pointfree">pointfree</a> and
-  <a href="http://hackage.haskell.org/package/pointful">pointful</a> libraries.</p>
+  <p>
+    Pointfree.js converts Haskell expressions between the pointfree and
+    pointful styles. It is a web front end to the <a href="http://hackage.haskell.org/package/pointfree">pointfree</a>
+    and <a href="http://hackage.haskell.org/package/pointful">pointful</a> libraries that
+    are compiled into javascript using <a href="https://github.com/ghcjs/ghcjs">GHCJS</a>.
+    Pointfreeing is performed entirely in the browser and this page is completely static.
+  </p>
+
+  <p><a href="https://github.com/zudov/pointfree.js">github.com/zudov/pointfree.js</a></p>
 
   <p>The design and inspiration are shamelessly borrowed from <a href="https://blunt.herokuapp.com">Blunt</a> by <a href="https://github.com/tfausak">@tfausak</a>.</p>
 </body>
-<script language="javascript" src="all.js" defer></script>
+<script>
+window.addEventListener("load", function() {
+    document.getElementById("pointfree").innerHTML = "";
+    document.getElementById("pointful").innerHTML = "";
+});
+</script>
+<script language="javascript" src="all.js" defer async></script>
 </html>
